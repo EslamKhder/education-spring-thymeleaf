@@ -6,8 +6,11 @@ import java.util.List;
 @Entity(name = "user")
 public class User extends BaseEntity{
 
+    @Column(name = "user_name",unique = true)
     private String username;
 
+
+    @Column(name = "password")
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -20,8 +23,10 @@ public class User extends BaseEntity{
     )
     private List<Role> roles;
 
+    @OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL,mappedBy = "user")
     private Student student;
 
+    @OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL,mappedBy = "user")
     private Master master;
 
     @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "user")
