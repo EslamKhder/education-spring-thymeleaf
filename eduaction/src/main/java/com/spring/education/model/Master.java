@@ -17,6 +17,7 @@ public class Master {
 
     private Date dateCreated;
 
+
     private Date lastUpdated;
 
 }
