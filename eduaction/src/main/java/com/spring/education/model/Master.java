@@ -2,7 +2,6 @@ package com.spring.education.model;
 
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
-import java.util.Date;
 
 public class Master extends Person {
 
