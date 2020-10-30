@@ -1,11 +1,6 @@
 package com.spring.education.model;
 
-public class Admin {
+public class Admin extends Boy {
 
-    private String firstname;
-
-    private String lastname;
-
-    private String phone;
 
 }
