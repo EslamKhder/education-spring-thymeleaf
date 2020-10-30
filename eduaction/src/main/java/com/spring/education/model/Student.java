@@ -1,10 +1,10 @@
 package com.spring.education.model;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name = "student")
 public class Student extends Person {
 
     @OneToOne

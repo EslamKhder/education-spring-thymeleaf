@@ -22,5 +22,7 @@ public class Course extends BaseEntity {
     )
     List<Student> students;
 
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "course")
     List<Master> masters;
+
 }
