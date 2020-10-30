@@ -7,4 +7,7 @@ public class Course {
 
     private String coursePrice;
 
+    List<Student> students;
+
+    List<Master> masters;
 }

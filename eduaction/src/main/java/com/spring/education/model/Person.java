@@ -1,6 +1,5 @@
 package com.spring.education.model;
 
-
 import com.spring.education.model.enums.Gender;
 
 import java.util.Date;

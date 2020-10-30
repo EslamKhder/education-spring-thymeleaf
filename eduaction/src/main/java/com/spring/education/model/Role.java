@@ -6,4 +6,5 @@ public class Role {
 
     private String roleName;
 
+    private List<User> users;
 }

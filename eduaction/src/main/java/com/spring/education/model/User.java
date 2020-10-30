@@ -8,4 +8,12 @@ public class User {
 
     private String Password;
 
+    private List<Role> roles;
+
+    private Student student;
+
+    private Master master;
+
+    private Admin admin;
+
 }
