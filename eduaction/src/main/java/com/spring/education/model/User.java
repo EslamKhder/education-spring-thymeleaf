@@ -3,6 +3,7 @@ package com.spring.education.model;
 import javax.persistence.*;
 import java.util.List;
 
+@Entity(name = "user")
 public class User extends BaseEntity{
 
     private String username;

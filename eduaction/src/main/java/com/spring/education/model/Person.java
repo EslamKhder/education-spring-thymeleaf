@@ -3,8 +3,10 @@ package com.spring.education.model;
 import com.spring.education.model.enums.Gender;
 
 import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
+@MappedSuperclass
 public class Person extends Boy {
 
     @Column(name = "age")

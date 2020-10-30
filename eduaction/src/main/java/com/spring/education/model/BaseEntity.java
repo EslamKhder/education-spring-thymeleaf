@@ -2,6 +2,7 @@ package com.spring.education.model;
 
 import javax.persistence.*;
 
+@MappedSuperclass
 public class BaseEntity {
 
     @Id
