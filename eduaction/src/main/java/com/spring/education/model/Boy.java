@@ -1,7 +1,6 @@
 package com.spring.education.model;
 
-public class Boy {
-    private long id;
+public class Boy extends BaseEntity{
 
     private String firstname;
 

@@ -2,9 +2,7 @@ package com.spring.education.model;
 
 import java.util.List;
 
-public class Course {
-
-    private long id;
+public class Course extends BaseEntity{
 
     private String courseName;
 
