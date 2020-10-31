@@ -12,11 +12,11 @@ public class Course extends BaseEntity {
     @Column(name = "course_price")
     private String coursePrice;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "user_course",
             joinColumns = {
-                    @JoinColumn(name = "couse_id")
+                    @JoinColumn(name = "course_id")
             },
             inverseJoinColumns = {@JoinColumn(name = "student_id")}
     )

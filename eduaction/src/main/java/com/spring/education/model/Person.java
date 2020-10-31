@@ -24,6 +24,6 @@ public class Person extends Boy {
     @Column(name = "date_created")
     private Date dateCreated;
 
-    @Column(name = "last-updated")
+    @Column(name = "last_updated")
     private Date lastUpdated;
 }
