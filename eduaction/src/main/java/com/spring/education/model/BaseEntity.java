@@ -1,7 +1,12 @@
 package com.spring.education.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @MappedSuperclass
 public class BaseEntity {
 
@@ -9,4 +14,5 @@ public class BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
+
 }
